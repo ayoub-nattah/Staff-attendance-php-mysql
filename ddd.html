@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body{
+        background-color: red;
+    }
+  </style>
+</head>
+<body dir="rtl" >
+  <div class="content">
+    <div class="header">
+      <div class="ministry">
+        <p>وزارة الفلاحة والصيد البحري<br>المديرية الجهوية للفلاحة بوادي الذهب الكويرة</p>
+      </div>
+      <div id="city-receipt">
+        <p>الداخلة في:<span id="current-date"></span></p>
+      </div>
+    </div>
+    
+    <div class="program">
+      <h1 class="program-title">وصل الاستفادة من عملية توريد الماشية</h1>
+      <h2 id="program-subtitle">برنامج <span id="current-year"></span>	</h2>
+    </div>
+
+    <form id="myForm" method="post" action="submit.php" >
+      <div class="form-section">
+        <h2>المعلومات الشخصية</h2>
+        <div class="form-group">
+          <label for="fullname">الاسم</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+
+        <div class="form-group">
+          <label for="cin">رقم ب ت و</label>
+          <input type="text" id="cin" name="cin" required>
+        </div>
+
+        <div class="form-group">
+          <label for="department">الدائرة</label>
+          <input type="text" id="department" name="department" required>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2>معلومات الماشية والشاحنة</h2>
+        <div class="form-group">
+          <label for="LocationVille">مكان تواجد القطيع</label>
+          <input type="text" id="LocationVille" name="LocationVille" required>
+        </div>
+
+        <div class="form-group">
+          <label for="animal-count">عدد رؤوس الماشية:</label>
+          <div class="input-container">
+            <div class="animal-input">
+              <label for="camel-count">الابل:</label>
+              <input type="number" id="camel-count" name="camel-count" required>
+            </div>            
+            <div class="animal-input">
+              <label for="goat-count">الماعز:</label>
+              <input type="number" id="goat-count" name="goat-count" required>
+            </div>
+            <div class="animal-input">
+             

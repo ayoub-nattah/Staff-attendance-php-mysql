@@ -1,0 +1,438 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav ul li i{
+    font-size: 20px;
+    color: white;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.data {
+    height: 100vh;
+    margin-left: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    color: #ffffff;
+    background: #0c4da3;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    position: fixed;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+label {
+    line-height: 10px;
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: 200;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    line-height: 50px;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #0c4da3;
+    font-size: 20px;
+    padding: 6px 15px;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+nav ul li a i {
+    color: #0c4da3;
+
+    background-color: white;
+}
+
+nav ul li a:hover {
+    background-color: #014279;
+    color: white;
+    transition: 0.5s;
+}
+nav ul li a:hover i {
+    background-color: #014279;
+    color: white;
+    transition: 0.5s;
+}
+
+
+.side-menu {
+    position: fixed;
+    background: #0c4da3;
+    width: 220px;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.side-menu center img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.side-menu center h2 {
+    color: white;
+    line-height: 20px;
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+
+.side-menu a {
+    display: block;
+    line-height: 60px;
+    transition: 0.5s;
+    background: 015eab;
+}
+
+.side-menu a:hover {
+    background: #337AB7;
+    padding-left: 20px;
+}
+
+.side-menu span {
+    font-size: 14px;
+    margin-left: 10px;
+    color: white;
+}
+
+.side-menu i {
+    font-size: 20px;
+    margin-left: 20px;
+    color: white;
+}
+
+nav .menu-bar {
+    float: right;
+    margin-top: 20px;
+    display: none;
+    margin-right: 20px;
+}
+
+#menu {
+    display: none;
+}
+
+.side-menu .Logout {
+    display: none;
+}
+/* search */
+
+#search_text{
+    width: 400px;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+#filter_date{
+    width: 200px;
+    height: 30px;
+    margin-bottom: 30px;
+  
+
+}
+/* ajouter ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
+.Btn_add {
+    width: fit-content;
+    margin-bottom:20px;
+    background-color: #1877f2;
+    padding: 5px 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: 0;
+    border-radius: 6px;
+    text-decoration: 0;
+}
+
+.Btn_add img {
+    margin-right: 5px;
+    height: 20px;
+}
+/*tableau*/
+
+table {
+    color: black; 
+    grid-template-rows: 1.25rem 1fr;
+    grid-template-columns: 1fr;
+    height: 250px;
+    display: block;
+    overflow: auto;
+    
+
+}
+
+
+
+th {
+    background-color: #0c4da3;
+    font-size: 16px;
+    padding: 5px 4px;
+    font-weight: 500;
+    color: #fff;
+    position: sticky; /* make the table heads sticky */
+    top: 0px;
+    
+}
+td {
+    font-weight: 400;
+    padding: 5px 30px;
+    font-size: 14px;
+    text-align: center;
+
+}
+img {
+    height: 25px;
+   
+}
+tr:nth-child(2n){
+    background-color: #f6f8f8;
+}
+
+tr:nth-child(2n) td {
+    border-bottom: 1px solid #e0e0e0;
+    border-top:  1px solid #e0e0e0;
+}
+/* statut */
+.p1{
+    color: white;
+    background-color: #01e601;
+    border-radius: 10px;
+    padding: 5px;
+} 
+
+.p2 {
+    color: white;
+    background-color: rgb(244, 3, 3);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/*Form CSS*/
+
+.form label {
+    color: black;
+    grid-column: span 2;
+
+
+
+}
+.form {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    font-size: 0.85em;
+    color: #1e2a28;
+    width: 900px;
+    padding: 26px 12px 20px 36px;
+
+}
+
+main{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+
+}
+
+.form1 {
+
+
+
+}
+
+.form form {
+    padding: 10px;
+    box-sizing: border-box;
+
+
+
+    
+}
+.form form h3{
+
+    border: 1px solid black;
+    color: #ebfff9;
+    text-align: center;
+    margin: 10px;
+    background-color: #0c4da3;
+
+
+
+    
+}
+.form form input {
+
+    border: 1px solid black;
+    margin-bottom: 14px;
+    
+    
+    
+
+
+}
+.form form p {
+
+    padding: 8px;
+}
+
+
+.formview table{
+    margin-left: auto;
+    margin-right: auto;
+    border: #abaebc 1px solid;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background-color: #f6f8f8;
+    height: 450px;
+    font-size: 1em;
+    color: #1e2a28;
+    width: 640px;
+    padding: 12px 12px 12px 12px;
+
+}
+
+.formview .table-responsive table th, tr{
+    font-size: 1em;
+    width: 340px;   
+}
+
+.formview td{
+    font-size: 1em;
+    width: 340px;
+}
+.formview h2{
+    margin-top: 30px;
+    font-size: 1.4em;
+    text-align: center;
+
+}
+
+h2 {
+    margin: 10px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+label {
+    margin-top: 1px;
+    text-transform: uppercase;
+}
+input{
+    padding: 5px;
+    border: 1px solid #999;
+    outline: 0;
+    margin-top: 2px;
+}
+input:focus{
+    border: 1px solid #ff0800;
+}
+input[type="submit"]{
+    margin-top: 25px;
+    background-color: #1877f2;
+    border: 1px solid #1877f2;
+    border-radius: 20px;
+    width: 250px;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+}
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+
+@media (max-width:850px) {
+    .side-menu a span {
+        display: none;
+    }
+
+    .side-menu center {
+        display: none;
+    }
+
+    .side-menu {
+        width: 100px;
+    }
+
+    .side-menu a i {
+        display: block;
+        line-height: 80px;
+        text-align: center;
+        margin-left: 0;
+        font-size: 35px;
+    }
+
+    .data {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width:650px) {
+    .data {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .side-menu {
+        width: 100%;
+        text-align: center;
+        left: 100%;
+        background-color: #4c516d;
+        transition: all 0.5s;
+    }
+
+    .side-menu a i {
+        display: none;
+    }
+
+    .side-menu a span {
+        display: block;
+    }
+
+    .side-menu .Logout {
+        display: block;
+    }
+
+    nav .menu-bar {
+        display: block;
+    }
+}
+
+#menu:checked~.side-menu {
+    left: 0;
+}
+img{
+    background-color: white;
+}
